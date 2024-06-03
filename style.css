@@ -3,11 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
+
 body{
     background-color: #F0F0F0;
 }
@@ -19,9 +20,18 @@ p, h2, h3, a, li, input{
 .bg-custom-blue{
     background: #5164F1;
 }
+
+.bg-custom-blue-2{
+    background-color: #2A43FD;
+}
+
+.bg-custom-blue-3{
+    background-color: #7282F9;
+}
+
+
 .bg-custom-light-blue{
     background: #e0e8ee;
-
 }
 
 .rounded-10{
@@ -36,15 +46,24 @@ p, h2, h3, a, li, input{
     width: 40%;
 }
 
+.w-95{
+    width: 95%;
+}
+
 .w-45{
     width: 45%;
 }
 
+.fs-32px{
+    font-size: 32px;
+}
 
+.fs-16px{
+    font-size: 16px ;
+}
 
-.fs-0{
-    font-size: 32px ;
-    font-weight: 900;
+.fs-8px{
+    font-size:12px;
 }
 
 .text-blue
