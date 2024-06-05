@@ -29,6 +29,10 @@ p, h2, h3, a, li, input{
     background-color: #7282F9;
 }
 
+.bg-custom-blue-4{
+    background-color: #DAE2EC;
+}
+
 
 .bg-custom-light-blue{
     background: #e0e8ee;
@@ -88,22 +92,26 @@ ul{
     list-style: none;
 }
 
-
-header{
-    position: relative;
-    height: 22vh;
+a{
+    text-decoration: none;
 }
+
+
 
 h1{
     background: url("./img/logos/Logo-blanco-min.png") 0 0 no-repeat;
     background-size: contain;
     height: 60px;
-    width: 100%;
     color:transparent;
     z-index: 100;
     position: absolute;
     top: 0px;
     left: 8px;
+}
+
+header{
+    position: relative;
+    height: 22vh;
 }
 
 .header_background
