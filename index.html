@@ -10,18 +10,14 @@
 <body >
 
 
-    <header class="d-flex align-items-center justify-content-center container ">
-        <h1 class="mt-2" >BnBuddy</h1>
+    <header class="d-flex align-items-center justify-content-center container">
+        <h1 class="mt-2 " >BnBuddy</h1>
 
-
-        <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <img src="./img/logos/hamburger-menu.svg" alt="Menu"> 
+        </button>
 
-          </button>
-
-
-
-        <nav class="d-none d-lg-flex">
+        <nav class="d-none d-lg-flex h-50 align-items-start justify-content-around bg-custom-blue justify-self-center bg-black">
             <button><a href="#">Inicio</a></button>
             <button><a href="#">Beneficios</a></button>
             <button><a href="#">Como funciona</a></button>
@@ -29,27 +25,22 @@
             <button><a href="#">ES</a></button>
         </nav>
 
-
-
-
-
-
           
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <nav class=" d-lg-flex">
-                    <button><a href="#">Inicio</a></button>
+                    <button class=""><a href="#">Inicio</a></button>
                     <button><a href="#">Beneficios</a></button>
                     <button><a href="#">Como funciona</a></button>
                     <button><a href="#">Planes</a></button>
                     <button><a href="#">ES</a></button>
                 </nav>
             </div>
-          </div>
+        </div>
 
 
 
