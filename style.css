@@ -75,6 +75,14 @@ p, h2, h3, a, li, input{
     color:#263A74;
 }
 
+.outline-blue{
+    border: solid 1px #5164F1;
+}
+
+.z-100{
+    z-index: 100;
+}
+
 button{
     border:none;
 }
@@ -141,7 +149,7 @@ header{
     
     .header_background{
         background-image: url("./img/backgrounds/desktop_background.svg");
-        width: 100%;
+        width: 75%;
         height: 100%;
         transform: translate(0%, 0%);
     }

@@ -10,19 +10,31 @@
 <body >
 
 
-    <header class="d-flex align-items-center justify-content-center container">
+    <header class="d-flex align-items-center justify-content-end container">
         <h1 class="mt-2 " >BnBuddy</h1>
 
         <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <img src="./img/logos/hamburger-menu.svg" alt="Menu"> 
         </button>
 
-        <nav class="d-none d-lg-flex h-50 align-items-start justify-content-around bg-custom-blue justify-self bg-black">
-            <button><a href="#">Inicio</a></button>
-            <button><a href="#">Beneficios</a></button>
-            <button><a href="#">Como funciona</a></button>
-            <button><a href="#">Planes</a></button>
-            <button><a href="#">ES</a></button>
+        <nav class="d-none d-lg-flex h-75 mt-4 w-50 align-items-start justify-content-around bg-custom-blue bg-transparent z-100">
+            <a href="#" class="text-white fw-medium">Inicio</a>
+            <a class="text-white" href="#">Beneficios</a>
+            <a class="text-white" href="#">Como funciona</a>
+            <a class="text-white" href="#">Planes</a>
+            <div class="dropdown">
+                <button class="bg-transparent dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./img/logos/icon-mexico.svg" alt="">  
+                    ES
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a class=" text-white fw-normal" href="#">
+                            
+                        </a>
+                    </li>
+                  </ul>
+            </div>
         </nav>
 
           
@@ -33,7 +45,7 @@
             </div>
             <div class="offcanvas-body">
                 <nav class=" d-lg-flex">
-                    <button class=""><a href="#">Inicio</a></button>
+                    <button ><a href="#">Inicio</a></button>
                     <button><a href="#">Beneficios</a></button>
                     <button><a href="#">Como funciona</a></button>
                     <button><a href="#">Planes</a></button>
@@ -51,17 +63,24 @@
     <section class="header_background"></section>
 
 
-    <section class="container ">
-        <div>
-            <h2 class="fw-bold fs-2 ">Guías digitales inteligentes para hosts</h2>
-            <p class="fw-medium fs-normal">Mejora la experiencia de tus huéspedes y ofrece una guía digital personalizada accesible desde cualquier dispositivo.</p>
+    <section class="container d-lg-flex align-items-center">
+        <div >
+            <h2 class="fw-bold fs-2 w-75">Guías digitales inteligentes para hosts</h2>
+            <p class="fw-medium fs-normal w-75">Mejora la experiencia de tus huéspedes y ofrece una guía digital personalizada accesible desde cualquier dispositivo.</p>
         
-            <form action="" class="d-flex flex-column">
+            <div class="d-lg-flex d-none ">
+                <button class="p-2 bg-custom-blue rounded-4 text-white">Suscribirme a la lista de espera</button>
+    
+                <button class="p-2 text-blue outline-blue rounded-4 mx-4">Contactanos</button>
+            </div>
+
+            <form action="" class="d-flex flex-column d-lg-none">
                 <input class="rounded-4 p-3 mb-2 border bg-transparent" type="text" placeholder="examples@examples.com" name="" id="" required>
                 <input class="rounded-4 p-3 bg-custom-blue text-white fw-semibold"  type="submit" value="Suscribete">
             </form>
         </div>
         
+
 
 
         <div class="row position-relative my-5 ">
@@ -71,29 +90,29 @@
         </div>
     </section>
 
-    <section class="container ">
+    <section class="container d-lg-flex">
         <div>
             <h2 class="fw-bold fs-2 text-blue pt-4 pb-2">Optimiza la experiencia de tus huéspedes con BnBuddy</h2>
             <p class="fw-normal">Simplifica la comunicación, ofrece recomendaciones personalizadas, garantiza la confianza internacional y accede fácilmente desde cualquier dispositivo</p>
         </div>
 
-        <ul class="row container">
-            <li class="col-6 d-flex flex-column ">
+        <ul class="d-lg-flex row container ">
+            <li class="col-6 col-lg-3 d-flex flex-column ">
                 <img  src="./img/logos/question.svg" alt="FAQ">
-                <p class="text-blue fw-medium fs-5 text-center">Reduce las preguntas de tus húespedes</p>
+                <p class="text-blue fw-medium fs-5 text-center ">Reduce las preguntas de tus húespedes</p>
             </li>
 
-            <li class="col-6  d-flex flex-column">
+            <li class="col-6 col-lg-3 d-flex flex-column">
                 <img src="./img/logos/map.svg" alt="Map">
                 <p class="text-blue fw-medium fs-5 text-center">Muestra un mapa interactivo con recomendaciones</p>
             </li>
 
-            <li class="col-6  d-flex flex-column">
+            <li class="col-6 col-lg-3 d-flex flex-column">
                 <img src="./img/logos/users.svg" alt="BnBuddy">
                 <p class="text-blue fw-medium fs-5 text-center">Recibe huéspedes internacionales con confianza</p>
             </li>
 
-            <li class="col-6  d-flex flex-column">
+            <li class="col-6 col-lg-3 d-flex flex-column">
                 <img class="" src="./img/logos/Phone.svg" alt="Phone">
                 <p class="text-blue fw-medium fs-5 px-1 text-center">Visualiza tu guía en cualquier dispositivo</p>
             </li>
@@ -101,14 +120,15 @@
     </section>
 
     <section class="container">
-            <h2 class="text-blue fw-semibold fs-4 mb-3">¿Por qué usar guías digitales?</h2>
-            <p class="fw-normal">Las guías digitales ofrecen una experiencia conveniente y personalizada para huéspedes y anfitriones, simplificando la comunicación, proporcionando recomendaciones relevantes, facilitando la traducción automática para audiencias internacionales y permitiendo un acceso rápido desde cualquier dispositivo</p>
-            <button class="w-100 p-2 bg-custom-blue text-white fw-semibold fs-5 rounded-4">Ver demo</button>
-            <img class="w-100 mt-4" src="./img/illustrations/Phone+comments-min.png" alt="demo">
-    
-        </section>
+        <img class="w-100 mt-4" src="./img/illustrations/Phone+comments-min.png" alt="demo">
 
-    <section class="container">
+        <h2 class="text-blue fw-semibold fs-4 mb-3">¿Por qué usar guías digitales?</h2>
+        <p class="fw-normal">Las guías digitales ofrecen una experiencia conveniente y personalizada para huéspedes y anfitriones, simplificando la comunicación, proporcionando recomendaciones relevantes, facilitando la traducción automática para audiencias internacionales y permitiendo un acceso rápido desde cualquier dispositivo</p>
+        <button class="w-100 p-2 bg-custom-blue text-white fw-semibold fs-5 rounded-4">Ver demo</button>
+
+    </section>
+
+    <section class="container mt-5">
         <h2 class="container fs-5 fw-bold text-blue">Ahorra tiempo</h2>
 
         <div class="container">
