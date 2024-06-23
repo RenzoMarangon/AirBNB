@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box !important;
+    box-sizing:border-box !important;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -42,6 +42,17 @@ p, h2, h3, a, li, input{
     border-radius: 100%;
 }
 
+.rounded-6{
+    border-radius: 8rem;
+}
+
+
+
+.bg-custom-gray
+{
+    background: #80b5e30a;
+}
+
 
 .translate-middlex{
     transform: translate(75%,25%);
@@ -49,6 +60,11 @@ p, h2, h3, a, li, input{
 .w-40{
     width: 40%;
 }
+
+.w-80{
+    width: 80%;
+}
+
 
 .w-95{
     width: 95%;
@@ -70,13 +86,25 @@ p, h2, h3, a, li, input{
     font-size:12px;
 }
 
+
+
 .text-blue
 {
-    color:#263A74;
+    color:#263A74 !important;
 }
 
+.text-blue-2
+{
+    color:#5164F1 !important;
+}
+
+
 .outline-blue{
-    border: solid 1px #5164F1;
+    border: solid 2px #5164F1;
+}
+
+.justify-self-end{
+    justify-self: center !important;
 }
 
 .z-100{
@@ -127,20 +155,20 @@ header{
     background-image: url("./img/backgrounds/header_background.webp");
     background-repeat: no-repeat;
     background-position: top;
-    background-size:cover;
+    background-size:contain;
     width: 100vw;
     height: 20vh;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-0%, 0%);
+    transform: translate(0%, 0%);
     z-index: -1;
 
 }
 
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
     h1{
         background: url("./img/logos/Logo-azul-min.png") 0 0 no-repeat;
         width: 100%;
@@ -152,15 +180,54 @@ header{
         width: 75%;
         height: 100%;
         transform: translate(0%, 0%);
+
     }
 
+
+    .fs-lg-12px{
+        font-size: 12px !important;
+    }
+    .fs-lg-14px{
+        font-size: 14px !important;
+    }
+
+    .fs-lg-16px{
+        font-size: 16px !important;
+    }
+
+    .w-lg-80{
+        width: 80%;
+    }
+
+    .w-lg-25{
+        width: 25% !important;
+    }
+    .w-lg-50{
+        width: 50% !important;
+
+    }
+
+    .fw-lg-normal{
+        font-weight: 300 !important;
+    }
+
+    
 }
-@media screen and (min-width: 550px) and (max-width:768px) {
+
+@media screen and (min-width: 550px) and (max-width:830px) {
     .header_background{
-        height: 28vh;
+        height: 30vh;
     }
     header{
         height: 30vh;
     }
 
+}
+@media screen and (min-width: 831px) and (max-width:990px) {
+    .header_background{
+        height: 38vh;
+    }
+    header{
+        height: 38vh;
+    }
 }
