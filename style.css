@@ -128,6 +128,7 @@ input, textarea{
 
 textarea{
     resize: none;
+    min-height: calc(100px + 4rem);
 }
 
 .border-0{
