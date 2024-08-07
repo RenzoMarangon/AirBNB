@@ -113,6 +113,10 @@ p, h2, h3, a, li, input{
     justify-self: center !important;
 }
 
+.h-30{
+    height: 250px !important;
+    width: auto;
+}
 
 .z-100{
     z-index: 100;
@@ -182,6 +186,28 @@ header{
 
 }
 
+.mr-30{
+    margin-right: 500px !important;
+}
+
+.w-30{
+    width: 30% !important;
+}
+
+.start-75{
+    left: 75% !important;
+}
+
+.top-75{
+    top: 20% !important;
+}
+
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Ajusta este valor según tus necesidades */
+    padding: 10px;
+}
 
 
 @media screen and (min-width: 991px) {
@@ -214,6 +240,7 @@ header{
     .w-lg-80{
         width: 80%;
     }
+    
 
     .w-lg-25{
         width: 25% !important;
@@ -232,6 +259,12 @@ header{
     }
     
 
+    .superhost{
+        position: absolute;
+        top: 5% !important;
+        left: 75% !important;
+        transform: translate(-75%, -25%);
+    }
     
 }
 
