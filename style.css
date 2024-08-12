@@ -224,6 +224,24 @@ header{
     transform: translate(0,0%);
 }
 
+.card-background{
+    background-image: url("./img/backgrounds/footer_background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    z-index: -1;
+    bottom: 25%;
+    transform: translate(0,25%);
+}
+
+.justify-self-center {
+    justify-self: center !important;
+}
+
 @media screen and (min-width: 991px) {
     h1{
         background: url("./img/logos/Logo-azul-min.png") 0 0 no-repeat;
@@ -288,11 +306,25 @@ header{
         background-size: cover;
         position: absolute;
         width: 100%;
+        height: 20%;
+        left: 0;
+        z-index: -1;
+        bottom: 2%;
+        transform: translate(0,5%);
+    }
+
+    .card-background{
+        background-image: url("./img/backgrounds/footer_background.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
         height: 30%;
         left: 0;
         z-index: -1;
-        bottom: 1%;
-        transform: translate(0,5%);
+        bottom: 33%;
+        transform: translate(0,33%);
     }
     
     
