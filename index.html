@@ -14,7 +14,7 @@
         <h1 class="mt-2 " >BnBuddy</h1>
 
         <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <img src="./img/logos/hamburger-menu.svg" alt="Menu"> 
+            <img src="./img/logos/hamburger-menu.svg" alt="<Menu"> 
         </button>
 
         <nav class="d-none d-lg-flex h-75 mt-4 w-50 align-items-start justify-content-around bg-custom-blue bg-transparent z-100">
@@ -27,11 +27,12 @@
                     <img src="./img/logos/icon-mexico.svg" alt="">  
                     ES
                 </button>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                        <a class=" text-white fw-normal" href="#">
-                            
-                        </a>
+                <ul class="dropdown-menu ">
+                    <li class="dropdown-item ">
+                        <button class="bg-transparent w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./img/logos/icon-eeuu.png" alt="">  
+                            EN
+                        </button>
                     </li>
                   </ul>
             </div>
@@ -43,13 +44,29 @@
                 <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <nav class=" d-lg-flex">
-                    <button ><a href="#">Inicio</a></button>
-                    <button><a href="#">Beneficios</a></button>
-                    <button><a href="#">Como funciona</a></button>
-                    <button><a href="#">Planes</a></button>
-                    <button><a href="#">ES</a></button>
+            <div class="offcanvas-body active">
+                <nav class=" h-100 ">
+                    <ul class="d-flex flex-column h-25 justify-content-between align-items-start ">
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Beneficios</a></button></li>
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Cómo funciona</a></button></li>
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Inicio</a></button></li>
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Planes</a></button></li>
+                        <div class="dropdown">
+                            <button class="bg-transparent dropdown-toggle my-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/logos/icon-mexico.svg" alt="">  
+                                ES
+                            </button>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item ">
+                                    <button class="bg-transparent w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./img/logos/icon-eeuu.png" alt="">  
+                                        EN
+                                    </button>
+                                </li>
+                              </ul>
+                        </div>
+                     
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -431,7 +448,7 @@
             
             <div class="d-flex container align-items-start align-items-lg-center col-12 col-lg-10">
                 <input class="mt-1 mx-2" type="checkbox" id="terminos" required>
-                <label for="terminos">He leído y acepto los <b>Términos de Servicio y Política de Privacidad *</b></label>
+                <label for="terminos">He leído y acepto los <a class="text-blue-2" href="#">Términos de Servicio y Política de Privacidad *</a></label>
             </div>
 
             <input class="col-12 col-lg-2  my-2 rounded-4 py-3 bg-custom-blue text-white fw-normal" type="submit" value="Enviar">
@@ -449,7 +466,7 @@
             <p class="d-none d-lg-block"> <b class="fw-semibold">©</b> Copywriting </p>
 
             <ul class="d-flex justify-content-around my-4 my-lg-0 mb-lg-3 w-lg-50 ">
-                <li> <a href="#"> Sitemap</a></li>
+                <li > <a href="#"> Sitemap</a></li>
                 <li> <a href="#"> Aviso de Privacidad</a></li>
                 <li> <a href="#"> Nosotros</a></li>
             </ul>
@@ -458,10 +475,10 @@
                 <p class="d-lg-none"> <b class="fw-semibold">©</b> Copywriting </p>
 
                 <ul class="d-flex justify-content-around w-50 ">
-                    <li> <a href="#"> <img src="./img/logos/instagram.svg" alt="@BnBuddy"> </a></li>
-                    <li> <a href="#">  <img src="./img/logos/facebook.svg" alt="/BnBuddy">  </a></li>
-                    <li> <a href="#">  <img src="./img/logos/linkedin.svg" alt="/BnBuddy">  </a></li>
-                    <li> <a href="#">  <img src="./img/logos/twitter.svg" alt="@BnBuddy">  </a></li>
+                    <li class="mx-lg-2"> <a href="#"> <img src="./img/logos/instagram.svg" alt="@BnBuddy"> </a></li>
+                    <li class="mx-lg-2"> <a href="#">  <img src="./img/logos/facebook.svg" alt="/BnBuddy">  </a></li>
+                    <li class="mx-lg-2"> <a href="#">  <img src="./img/logos/linkedin.svg" alt="/BnBuddy">  </a></li>
+                    <li class="mx-lg-2"> <a href="#">  <img src="./img/logos/twitter.svg" alt="@BnBuddy">  </a></li>
                 </ul>
             </div>
     </footer>
