@@ -294,7 +294,7 @@ header{
     .superhost{
         position: absolute;
         top: 5% !important;
-        left: 70% !important;
+        left: 45% !important;
         transform: translate(-70%, -25%);
         width: 15% !important;
     }
