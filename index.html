@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BnBuddy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="js/wow.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body class="position-relative">
 
 
     <header class="d-flex align-items-center justify-content-end container">
-        <h1 class="mt-2 " >BnBuddy</h1>
+        <h1 class="mt-2  animate__animated  animate__fadeInDown wow" >BnBuddy</h1>
 
         <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <img src="./img/logos/hamburger-menu.svg" alt="<Menu"> 
+            <img src="./img/logos/hamburger-menu.svg" alt="Menu"> 
         </button>
 
         <nav class="d-none d-lg-flex h-75 mt-4 w-50 align-items-start justify-content-around bg-custom-blue bg-transparent z-100">
-            <a href="#" class="text-white fw-medium">Inicio</a>
-            <a class="text-white" href="#">Beneficios</a>
-            <a class="text-white" href="#">Como funciona</a>
-            <a class="text-white" href="#">Planes</a>
-            <div class="dropdown">
-                <button class="bg-transparent dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" 
+            class="text-white fw-medium scale-1 wow animate__animated animate__fadeInDown" 
+            data-wow-duration=".5s" data-wow-delay=".1s" >
+                Inicio
+            </a>
+
+            <a href="#beneficios" 
+            class='text-white  scale-1 wow animate__animated animate__fadeInDown'  
+            data-wow-duration=".5s" data-wow-delay=".2s"  href="#beneficios">
+                Beneficios
+            </a>
+
+            <a href="#comoFunciona" 
+            class='text-white  scale-1 wow animate__animated animate__fadeInDown'  
+            data-wow-duration=".5s" data-wow-delay=".3s"  >Como funciona</a>
+
+            <a href="#planes"  
+            class='text-white  scale-1 wow animate__animated animate__fadeInDown'  
+            data-wow-duration=".5s" data-wow-delay=".4s"   >Planes</a>
+
+            <div class='dropdown text-white  scale-1 wow animate__animated animate__fadeInDown'  
+            data-wow-duration=".6s" data-wow-delay=".5s"  >
+                <button class="bg-transparent dropdown-toggle text-white scale-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="./img/logos/icon-mexico.svg" alt="">  
                     ES
                 </button>
@@ -47,10 +71,10 @@
             <div class="offcanvas-body active">
                 <nav class=" h-100 ">
                     <ul class="d-flex flex-column h-25 justify-content-between align-items-start ">
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Beneficios</a></button></li>
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Cómo funciona</a></button></li>
                         <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Inicio</a></button></li>
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Planes</a></button></li>
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#beneficios">Beneficios</a></button></li>
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#comoFunciona">Cómo funciona</a></button></li>
+                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#planes">Planes</a></button></li>
                         <div class="dropdown">
                             <button class="bg-transparent dropdown-toggle my-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="./img/logos/icon-mexico.svg" alt="">  
@@ -82,14 +106,15 @@
 
     <section class="container d-lg-flex align-items-center">
         <div >
-            <h2 class="fw-bold fs-2 w-75">Guías digitales inteligentes para hosts</h2>
-            <p class="fw-medium fs-normal w-75">Mejora la experiencia de tus huéspedes y ofrece una guía digital personalizada accesible desde cualquier dispositivo.</p>
+            <h2 class="fw-bold fs-2 w-75 wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s" >Guías digitales inteligentes para hosts</h2>
+            <p class="fw-medium fs-normal w-75  wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" >Mejora la experiencia de tus huéspedes y ofrece una guía digital personalizada accesible desde cualquier dispositivo.</p>
         
-            <div class="d-lg-flex d-none ">
-                <button class="p-2 bg-custom-blue rounded-4 text-white fw-normal">Suscribirme a la lista de espera</button>
+            <div class="d-lg-flex d-none wow animate__animated animate__fadeInUp"
+            data-wow-duration=".5s" data-wow-delay=".4s" >
+                <button class="py-2 px-4 scale-1 bg-custom-blue rounded-4"><a class=" text-white fw-normal" href="#faq">Suscribirme a la lista de espera</a></button>
                 
 
-                <button class="p-2 text-blue-2 outline-blue rounded-4 mx-4 fw-normal">Contactanos</button>
+                <button class="p-2 text-blue-2 outline-blue rounded-4 mx-4 fw-normal scale-1"><a href="#contacto" class="text-blue-2 fw-normal white-to-blue">Contactanos</a></button>
             </div>
 
             <form action="" class="d-flex flex-column d-lg-none">
@@ -101,36 +126,42 @@
 
 
 
-        <div class="row position-relative my-5 ">
-            <img class="col-6" src="./img/illustrations/image1-min.png" alt="BnBuddy">
-            <img class="col-6 " src="./img/illustrations/image2-min.png" alt="BnBuddy">
-            <img class="position-absolute bottom-0 w-40 translate-middlex" src="./img/illustrations/image4-min.png" alt="BnBuddy">
-        </div>
+        <div class="row position-relative my-5 wow animate__animated animate__fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
+            <img src="./img/illustrations/img_top.png" alt="BnBuddy">
+           </div>
     </section>
 
     <section class="container d-lg-flex flex-column mt-lg-5">
         <div class="w-75 d-flex flex-column justify-content-center m-auto">
-            <h2 class="fw-bold fs-2  text-blue text-center pt-4 pb-2">Optimiza la experiencia de tus huéspedes con BnBuddy</h2>
-            <p class="fw-normal text-center">Simplifica la comunicación, ofrece recomendaciones personalizadas, garantiza la confianza internacional y accede fácilmente desde cualquier dispositivo</p>
+            <h2 class="fw-bold fs-2  text-blue text-center pt-4 pb-2 wow animate__animated animate__bounceIn" data-wow-duration=".5s" data-wow-delay=".2s">Optimiza la experiencia de tus huéspedes con BnBuddy</h2>
+            <p class="fw-normal text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-duration=".8s">Simplifica la comunicación, ofrece recomendaciones personalizadas, garantiza la confianza internacional y accede fácilmente desde cualquier dispositivo</p>
         </div>
 
         <ul class="d-flex flex-column flex-lg-row justify-content-around align-items-center container bg-custom-gray p-4 rounded-6">
-            <li class="col-6 col-lg-2 d-flex flex-column align-items-center ">
+            <li 
+            class="col-6 col-lg-2 d-flex flex-column align-items-center scale-1"  data-wow-duration="1s" data-wow-delay=".5s" 
+            >
                 <img class="w-lg-80 " src="./img/logos/question.svg" alt="FAQ">
                 <p class="text-blue fw-medium fs-5 fs-lg-16px  text-center ">Reduce las preguntas de tus húespedes<br><br> </p>
             </li>
 
-            <li class="col-6 col-lg-2 d-flex flex-column align-items-center ">
+            <li 
+            class="col-6 col-lg-2 d-flex flex-column align-items-center scale-1"  data-wow-duration="1.3s" data-wow-delay=".5s" 
+            >
                 <img class="w-lg-80" src="./img/logos/map.svg" alt="Map">
                 <p class="text-blue fw-medium fs-5 fs-lg-16px text-center   ">Muestra un mapa interactivo con recomendaciones</p>
             </li>
 
-            <li class="col-6 col-lg-2 d-flex flex-column align-items-center ">
+            <li 
+            class="col-6 col-lg-2 d-flex flex-column align-items-center scale-1"  data-wow-duration="1.6s" data-wow-delay=".5s" 
+            >
                 <img class="w-lg-80" src="./img/logos/users.svg" alt="BnBuddy">
                 <p class="text-blue fw-medium fs-5 fs-lg-16px text-center  ">Recibe huéspedes internacionales con confianza</p>
             </li>
 
-            <li class="col-6 col-lg-2 d-flex flex-column align-items-center ">
+            <li 
+            class="col-6 col-lg-2 d-flex flex-column align-items-center scale-1"  data-wow-duration="1.9s" data-wow-delay=".5s" 
+            >
                 <img class="w-lg-80" class="" src="./img/logos/Phone.svg" alt="Phone">
                 <p class="text-blue fw-medium fs-5 fs-lg-16px text-center ">Visualiza tu guía en cualquier dispositivo<br><br></p>
             </li>
@@ -138,58 +169,58 @@
     </section>
 
     <section class="d-flex flex-column align-items-center justify-content-center container mb-4">
-        <h2 class="my-5">Fácil de configurar, publica tu guía en minutos.</h2>
+        <h2 class="my-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s" id="beneficios">Fácil de configurar, publica tu guía en minutos.</h2>
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-4 mb-2 p-5">
+                <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
                     <div class="card h-100 border-0 shadow-sm rounded-6">
-                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Organiza tu contenido en secciones">
+                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Funciona en cualquier dispositivo">
                         <div class="card-body">
-                            <h5 class="card-title">Organiza tu contenido en secciones</h5>
-                            <p class="card-text">Organiza fácilmente tus guías, tales como Arrival, Wifi, reglas y viajes.</p>
+                            <h5 class="card-title">Funciona en cualquier dispositivo</h5>
+                            <p class="card-text">Tu guía es visible en cualquier navegador usando un enlace personal generado.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-2 p-5">
+                <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
                     <div class="card h-100 border-0 shadow-sm rounded-6">
-                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Organiza tu contenido en secciones">
+                        <img class="card-img-top img-fluid" src="./img/backgrounds/2.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
-                            <h5 class="card-title">Organiza tu contenido en secciones</h5>
-                            <p class="card-text">Organiza fácilmente tus guías, tales como Arrival, Wifi, reglas y viajes.</p>
+                            <h5 class="card-title">Traducciones automáticas con IA</h5>
+                            <p class="card-text">Traduce automáticamente tu guía a varios idiomas. Envía tu guía en el idioma que elijas.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-2 p-5">
+                <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
                     <div class="card h-100 border-0 shadow-sm rounded-6">
-                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Organiza tu contenido en secciones">
+                        <img class="card-img-top img-fluid" src="./img/backgrounds/1.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
-                            <h5 class="card-title">Organiza tu contenido en secciones</h5>
-                            <p class="card-text">Organiza fácilmente tus guías, tales como Arrival, Wifi, reglas y viajes.</p>
+                            <h5 class="card-title">Envía tu guía fácilmente</h5>
+                            <p class="card-text">Envía tu guía por correo electrónico, WhatsApp o muestra un código QR en tu propiedad.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-2 p-5">
+                <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
                     <div class="card h-100 border-0 shadow-sm rounded-6">
-                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Organiza tu contenido en secciones">
+                        <img class="card-img-top img-fluid" src="./img/backgrounds/5.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
-                            <h5 class="card-title">Organiza tu contenido en secciones</h5>
-                            <p class="card-text">Organiza fácilmente tus guías, tales como Arrival, Wifi, reglas y viajes.</p>
+                            <h5 class="card-title">Envía tu guía por correo electrónico, WhatsApp o muestra un código QR en tu propiedad.</h5>
+                            <p class="card-text">BnBuddy genera  recomendaciones cercanas como bares, restaurantes y atracciones.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-2 p-5">
+                <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
                     <div class="card h-100 border-0 shadow-sm rounded-6">
-                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Organiza tu contenido en secciones">
+                        <img class="card-img-top img-fluid" src="./img/backgrounds/4.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
-                            <h5 class="card-title">Organiza tu contenido en secciones</h5>
-                            <p class="card-text">Organiza fácilmente tus guías, tales como Arrival, Wifi, reglas y viajes.</p>
+                            <h5 class="card-title">Agrega contenido personalizado</h5>
+                            <p class="card-text">Personaliza tu guía usando un editor intuitivo. Agrega nuevas secciones, contenido e imágenes.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-2 p-5">
+                <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
                     <div class="card h-100 border-0 shadow-sm rounded-6">
-                        <img class="card-img-top img-fluid" src="./img/cards/section.jpg" alt="Organiza tu contenido en secciones">
+                        <img class="card-img-top img-fluid" src="./img/backgrounds/3.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
                             <h5 class="card-title">Organiza tu contenido en secciones</h5>
                             <p class="card-text">Organiza fácilmente tus guías, tales como Arrival, Wifi, reglas y viajes.</p>
@@ -200,7 +231,7 @@
         </div>
     </section>
 
-    <section class="container d-flex align-items-center flex-column position-relative">
+    <section class="container d-flex align-items-center flex-column position-relative" id="comoFunciona">
 
         <div class="row">
             <div  class="w-100 w-lg-50 mt-4 d-flex flex-column col-12 col-lg-6">
@@ -210,38 +241,38 @@
             </div>
 
             <div class="d-flex flex-column col-12 col-lg-6">
-                <h2 class="text-blue text-center text-lg-end fw-semibold fs-2 mb-3">¿Por qué usar guías digitales?</h2>
+                <h2 class="text-blue text-center text-lg-end fw-semibold fs-2 mb-3 wow animate__animated animate__bounceIn">¿Por qué usar guías digitales?</h2>
                 <p class="fw-normal text-center text-lg-end w-75 align-self-center align-self-lg-end">Las guías digitales ofrecen una experiencia conveniente y personalizada para huéspedes y anfitriones, simplificando la comunicación, proporcionando recomendaciones relevantes, facilitando la traducción automática para audiencias internacionales y permitiendo un acceso rápido desde cualquier dispositivo</p>
-                <button class=" w-50 w-lg-25 p-2 bg-custom-blue text-white fw-semibold fw-lg-normal align-self-center align-self-lg-end fs-lg-16px fs-5 rounded-4">Ver demo</button>
+                <!-- <button class=" w-50 w-lg-25 p-2 bg-custom-blue text-white fw-semibold fw-lg-normal align-self-center align-self-lg-end fs-lg-16px fs-5 rounded-4">Ver demo</button> -->
             </div>
         </div>
 
-        <h2 class="my-5">Interfaz de edición intuitiva</h2>
+        <h2 class="my-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s">Interfaz de edición intuitiva</h2>
 
-        <video class="w-75 rounded-2 mb-5" controls>
+        <video class="w-75 rounded-2 mb-5  autoplay muted" controls>
             <source src="https://amplify-d96b3e6ng1x9w-mai-amplifybnbuddybucket2291-hwwwwbyixrda.s3.us-east-2.amazonaws.com/public-assets/bnbuddy-ui-video-large.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
 
     <section class="container mt-5">
-        <h2 class="container fs-2 fw-bold text-blue mt-5">Ahorrá tiempo</h2>
+        <h2 class="container fs-2 fw-semibold text-blue mt-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s">Ahorrá tiempo</h2>
 
         <div class="d-lg-flex align-items-center">
             <div class="container">
-                <div class="d-flex bg-custom-blue-2 p-2 rounded-4 my-4 shadow w-lg-80 text-center">
+                <div class="d-flex bg-custom-blue-2 p-2 rounded-4 my-4 shadow w-lg-80  text-start">
                     <img class="p-2" src="./img/logos/img.svg" alt="Personaliza tus secciones">
-                    <p class="fs-16px m-auto text-white">Personaliza con imágenes y crea tus propias secciones</p>
+                    <p class="fs-16px my-auto text-white">Personaliza con imágenes y crea tus propias secciones</p>
                 </div>
 
-                <div class="d-flex  bg-custom-blue p-2 rounded-4 my-4 shadow w-lg-80">
+                <div class="d-flex  bg-custom-blue p-2 rounded-4 my-4 shadow w-lg-80  text-start">
                     <img class="p-2" src="./img/logos/money.svg" alt="Aumenta tus ingresos">
-                    <p class="fs-16px m-auto text-white">Aumenta tus ingresos ofreciendo servicios adicionales</p>
+                    <p class="fs-16px my-auto text-white">Aumenta tus ingresos ofreciendo servicios adicionales</p>
                 </div>
 
-                <div class="d-flex  bg-custom-blue-3 p-2 rounded-4 my-4 shadow w-lg-80">
+                <div class="d-flex  bg-custom-blue-3 p-2 rounded-4 my-4 shadow w-lg-80 ">
                     <img class="p-2 "  src="./img/logos/star.svg" alt="Experiencia">
-                    <p class="fs-16px text-white m-auto ">Ofrece experiencias de 5 estrellas</p>
+                    <p class="fs-16px text-white my-auto ">Ofrece experiencias de 5 estrellas</p>
                 </div>
             </div>
 
@@ -249,15 +280,15 @@
         </div>
     </section>
 
-    <section class="container my-5  ">
+    <section class="container my-5  " id="planes">
         <div class="card-background ">
         </div>
         <!-- <h2 class="fs-12px fw-semibold text-blue">Planes</h2> -->
-        <div class="d-lg-flex flex-lg-row justify-content-center p-3">   
+        <div class="d-lg-flex flex-lg-row justify-content-between p-3">   
             <!-- Plan free -->
-            <div class="bg-white mb-4 p-0 rounded-4 container col-12 col-lg-5 mx-lg-2 d-lg-flex flex-column justify-content-between  shadow">
+            <div class="bg-white mb-4 p-0 rounded-4 container col-12 col-lg-5 d-lg-flex flex-column justify-content-between shadow  scale-05">
     
-                <div class="p-3">
+                <div class="p-3 ">
                     <div class="d-flex align-items-center justify-content-between">
                         <h3 class="fs-32px text-blue fw-semibold">Plan Free</h3>
     
@@ -297,7 +328,7 @@
             </div>
     
             <!-- Plan plus -->
-            <div class="bg-white mb-4 p-0 rounded-4 col-12 col-lg-5 mx-lg-2 d-lg-flex flex-column justify-content-between shadow ">
+            <div class="bg-white mb-4 p-0 rounded-4 col-12 col-lg-5 mx-lg-2 d-lg-flex flex-column justify-content-between shadow scale-05">
     
                 <div class="p-3">
                     <div class="d-flex align-items-center justify-content-between">
@@ -350,8 +381,8 @@
     </section>
 
 
-    <section class="container">
-        <h2 class="h5 text-blue fs-4 fw-semibold mb-5">Preguntas frecuentes</h2>
+    <section class="container" id="faq">
+        <h2 class="h5 text-blue fs-2 fw-semibold mb-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s">Preguntas frecuentes</h2>
 
         <div class="container d-flex flex-column flex-lg-row">
             <img class="w-75 align-self-center" src="./img/illustrations/ilustración-min.png" alt="FQA">
@@ -369,7 +400,7 @@
                     <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
                     <div class="accordion-body ">
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, quia.</p>
+                        <p>Descarga nuestra aplicación hoy mismo desde la App Store o Google Play Store y comienza a peersonalizar tu guía solo con solo unos pocos toques. ¡Haz que la experiencia de tus huéspedes sea inolvidable con nuestra aplicación para crear guías digitales en BnBuddy.</p>
 
                     </div>
                     </div>
@@ -383,7 +414,8 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, quibusdam.</p>
+                        <p>BnBuddy te ofrece la posibilidad de traducir automáticamente  tus guías a una variedad de idiomas. Desde inglés, español, francés, alemán y muchos más, aseguramos que tus guías estén disponibles para tus huéspedes internacionales en su idioma preferido.
+                        </p>
                     </div>
                     </div>
                 </li>
@@ -397,24 +429,10 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, explicabo voluptatibus?</p>
+                        <p>Integrar BnBuddy con tu plataforma de reservas o calendario de disponibilidad es simple y rápido. Nuestra plataforma ofrece opciones de integración con varios servicios populares, como Airbnb, Booking.com y Google Calendar. Sigue unos simples pasos dentro de la configuración de tu cuenta en BnBuddy para conectar facilmente  tu plataforma y sincronizar la información de reservas y disponibilidad.</p>
                     </div>
                     </div>
                 </li>
-
-                <li class="accordion-item my-4 border-0 shadow-sm w-lg-80">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed border-0 fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        ¿Qué idiomas admite BnBuddy para la traducción automática de las guías?
-                    </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempora pariatur animi.</p>
-                    </div>
-                    </div>
-                </li>
-
 
                 <li class="accordion-item my-4 border-0 shadow-sm w-lg-80">
                     <h2 class="accordion-header">
@@ -424,7 +442,7 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, quos.</p>
+                        <p>Si necesitas ayuda o tienes alguna pregunta sobre el uso de BnBuddy, estamos aquí para ayudarte. Podes acceder a nuestro centro de ayuda dentro de la plataforma para encontrar respuestas a preguntas frecuentes y tutoriales paso a paso. Además, nuestro equipo de soporte está disponible para asistirte a través del chat en vivo dentro de la aplicación o enviando un correo electrónico a nuestro equipo de soporte</p>
                     </div>
                     </div>
                 </li>
@@ -439,19 +457,21 @@
 
         </form>
     </section>
+
     <div class="form-background ">
     </div>
-    <section class="container bg-custom-lg-transparent position-relative">
-        <h2 class="text-lg-center">Contactanos</h2>
 
-        <form action="" class="row  w-75 mx-auto position-relative ">
-            <input class="col-12  p-3  my-3 rounded-4" type="text" placeholder="Nombre" name="" id="" required>
-            <input class="col-12  p-3 ms-auto my-3 rounded-4"  type="email" placeholder="E-mail" name="" id="" required>
-            <textarea class="col-12 p-3 my-3 rounded-4"  type="text" placeholder="Escribe algo" name="" id="" required></textarea>
+    <section class="container bg-custom-lg-transparent position-relative" id="contacto">
+        <h2 class="text-lg-center fs-2 fw-semibold wow animate__animated animate__bounceIn" data-wow-duration=".5s">Contactanos</h2>
+
+        <form action="" class="row  w-75 mx-auto position-relative justify-content-between">
+            <input class="col-lg-5 col-12 p-3 my-3 rounded-4 border-color-gray" type="text" placeholder="Nombre" name="" id="" required>
+            <input class="col-lg-5 col-12 p-3 my-3 rounded-4 border-color-gray"  type="email" placeholder="E-mail" name="" id="" required>
+            <textarea class="col-12 p-3 my-3 rounded-4 border-color-gray"  type="text" placeholder="Escribe algo" name="" id="" required></textarea>
             
             <div class="d-flex container align-items-start align-items-lg-center col-12 col-lg-10">
                 <input class="mt-1 mx-2" type="checkbox" id="terminos" required>
-                <label for="terminos">He leído y acepto los <a class="text-blue-2" href="#">Términos de Servicio y Política de Privacidad *</a></label>
+                <label for="terminos">He leído y acepto los <a class="text-blue-2" href="#">Términos de Servicio  y Política de Privacidad *</a></label>
             </div>
 
             <input class="col-12 col-lg-2  my-2 rounded-4 py-3 bg-custom-blue text-white fw-normal" type="submit" value="Enviar">
@@ -488,5 +508,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
