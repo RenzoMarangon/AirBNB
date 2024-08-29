@@ -208,6 +208,14 @@ header{
     width: 30% !important;
 }
 
+.mt-4{
+    margin-top: 25px !important;
+}
+
+.mt-5{
+    margin-top: 50px !important;
+}
+
 .start-75{
     left: 75% !important;
 }
@@ -216,6 +224,17 @@ header{
     top: 20% !important;
 }
 
+.h-15vh{
+    height: 15vh;
+}
+
+.h-25vh{
+    height: 25vh;
+}
+
+.h-75vh{
+    height: 75vh;
+}
 
 .card-img-top {
     object-fit: cover;
@@ -290,6 +309,8 @@ header{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Standard */
 }
+
+
 
 @media screen and (min-width: 991px) {
     h1{

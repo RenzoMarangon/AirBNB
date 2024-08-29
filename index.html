@@ -18,14 +18,14 @@
 <body class="position-relative">
 
 
-    <header class="d-flex align-items-start justify-content-end container">
-        <h1 class="mt-2 animate__animated  animate__fadeInDown wow user-select-none scale-05" >BnBuddy</h1>
+    <header class="d-flex align-items-center justify-content-center container h-25vh">
+        <h1 class="mt-2 animate__animated  animate__fadeInDown wow user-select-none mt-4 scale-05" >BnBuddy</h1>
 
         <!-- <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <img src="./img/logos/hamburger-menu.svg" alt="Menu"> 
         </button> -->
 
-        <nav class="navbar navbar-expand-lg navbar-light position-relative w-100 my-2 d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-light position-relative w-100 d-lg-none">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="bg-transparent z-50" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
             </div>
         </nav>
 
-        <nav class="d-none d-lg-flex h-75 mt-4 w-50 align-items-start justify-content-around bg-custom-blue bg-transparent z-100">
+        <nav class="d-none d-lg-flex h-75 mt-5 w-50 align-items-start justify-content-around bg-custom-blue bg-transparent z-100">
             <a href="#" 
             class="text-white fw-medium scale-1 wow animate__animated animate__fadeInDown" 
             data-wow-duration=".5s" data-wow-delay=".1s" >
@@ -145,14 +145,14 @@
     <section class="header_background "></section>
 
 
-    <section class="container d-lg-flex align-items-center">
+    <section class="container d-lg-flex align-items-center h-75vh">
         <div >
-            <h2 class="fw-bold fs-2 w-75 wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s" >Guías digitales inteligentes para hosts</h2>
+            <h2 class="fw-bold fs-1 w-75 wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s" >Guías digitales inteligentes para hosts</h2>
             <p class="fw-medium fs-normal w-75  wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" >Mejora la experiencia de tus huéspedes y ofrece una guía digital personalizada accesible desde cualquier dispositivo.</p>
         
             <div class="d-lg-flex d-none wow animate__animated animate__fadeInUp"
             data-wow-duration=".5s" data-wow-delay=".4s" >
-                <button class="py-2 px-4 scale-1 bg-custom-blue rounded-4 "><a class=" text-white fw-normal " href="#faq">Suscribirme a la lista de espera</a></button>
+                <button class="py-2 px-4 scale-1 bg-custom-blue rounded-4 "><a class=" text-white fw-normal " href="#faq">Empezar</a></button>
                 
 
                 <button class="p-2 text-blue-2 outline-blue rounded-4 mx-4 fw-normal scale-1"><a href="#contacto" class="text-blue-2 fw-normal white-to-blue">Contactanos</a></button>
@@ -298,26 +298,48 @@
 
     <section class="container mt-5">
         <h2 class="container fs-2 fw-semibold text-blue mt-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s">Ahorrá tiempo</h2>
-
+    
         <div class="d-lg-flex align-items-center">
             <div class="container">
-                <div class="d-flex bg-custom-blue-2 p-2 rounded-4 my-4 shadow w-lg-80  text-start scale-05">
-                    <img class="p-2" src="./img/logos/img.svg" alt="Personaliza tus secciones">
-                    <p class="fs-16px my-auto text-white mx-3">Personaliza con imágenes y crea tus propias secciones</p>
-                </div>
 
-                <div class="d-flex  bg-custom-blue p-2 rounded-4 my-4 shadow w-lg-80  text-start scale-05">
-                    <img class="p-2" src="./img/logos/money.svg" alt="Aumenta tus ingresos">
-                    <p class="fs-16px my-auto text-white  mx-3">Aumenta tus ingresos ofreciendo servicios adicionales</p>
-                </div>
+                <!-- Acá para cambiar imágen -->
 
-                <div class="d-flex  bg-custom-blue-3 p-2 rounded-4 my-4 shadow w-lg-80 scale-05">
-                    <img class="p-2 "  src="./img/logos/star.svg" alt="Experiencia">
-                    <p class="fs-16px text-white my-auto  mx-3">Ofrece experiencias de 5 estrellas</p>
-                </div>
+                <button 
+                    type="button"  
+                    class="d-flex bg-custom-blue-2 p-2 rounded-4 my-4 shadow w-lg-80 text-start scale-05"
+                    onclick="changeImage('./img/illustrations/imagen2.svg')"
+                    >
+                        <img class="p-2" src="./img/logos/img.svg" alt="Personaliza tus secciones">
+                        <p class="fs-16px my-auto text-white mx-3">Personaliza con imágenes y crea tus propias secciones</p>
+                </button>
+    
+                <!-- Acá para cambiar imágen -->
+                
+                <button 
+                    type="button"  
+                    class="d-flex bg-custom-blue-2 p-2 rounded-4 my-4 shadow w-lg-80 text-start scale-05"
+                    onclick="changeImage('./img/illustrations/imagen2.svg')"
+                >
+                        <img class="p-2" src="./img/logos/money.svg" alt="Aumenta tus ingresos">
+                    <p class="fs-16px my-auto text-white mx-3">Aumenta tus ingresos ofreciendo servicios adicionales</p>
+                </button>
+
+                <!-- Acá para cambiar imágen -->
+
+                <button 
+                    type="button"  
+                    class="d-flex bg-custom-blue-2 p-2 rounded-4 my-4 shadow w-lg-80 text-start scale-05"
+                    onclick="changeImage('./img/illustrations/image1-min.png')"
+                >
+                        <img class="p-2" src="./img/logos/star.svg" alt="Experiencia">
+                    <p class="fs-16px text-white my-auto mx-3">Ofrece experiencias de 5 estrellas</p>
+                </button>
+
             </div>
-
-            <img class="d-none d-lg-block" src="./img/illustrations/ahorra_tiempo.svg" alt="BnBuddy">
+    
+            <div class="image-container">
+                <img class="d-none d-lg-block" id="displayImage" src="./img/illustrations/ahorra_tiempo.svg" alt="Imagen">
+            </div>
         </div>
     </section>
 
@@ -530,7 +552,7 @@
 
     
 
-    <footer class="container  d-lg-flex align-items-center justify-content-between mt-5 py-2">
+    <footer class="container d-lg-flex align-items-center justify-content-between mt-5 py-2 h-15vh">
 
             <p class="d-none d-lg-block"> <b class="fw-semibold">©</b> Copywriting </p>
 
@@ -556,6 +578,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('displayImage').src = imageSrc;
+        }
+    </script>
 
     <script>
     new WOW().init();
