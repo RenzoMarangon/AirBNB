@@ -169,7 +169,7 @@ a{
 }
 
 h1{
-    background: url("./img/logos/Logo-blanco-min.png") 0 25% no-repeat;
+    background: url("./img/logos/Logo_blanco.svg") 0 25% no-repeat;
     background-size: contain;
     height: 60px;
     color:transparent;
@@ -322,7 +322,7 @@ header{
 
 @media screen and (min-width: 991px) {
     h1{
-        background: url("./img/logos/Logo-azul-min.png") 0 0 no-repeat;
+        background: url("./img/logos/Logo_azul.svg") 0 0 no-repeat;
         width: 23%;
         height: 80px;
         
