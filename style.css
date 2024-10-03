@@ -169,19 +169,30 @@ a{
 }
 
 h1{
-    background: url("./img/logos/Logo_blanco.svg") 0 25% no-repeat;
+    background: url("./img/logos/Logo_blanco.svg") 0 0 no-repeat;
     background-size: contain;
-    height: 60px;
+    height: 80px;
     color:transparent;
     z-index: 100;
-    position: absolute;
-    top: 0px;
-    left: 8px;
 }
 
 header{
     position: relative;
-    height: 22vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.burguer-button{
+    background-color: #000;
+
+}
+
+.burguer-button img{
+    width: 30px;
+    height: auto;
 }
 
 .header_background
@@ -244,9 +255,14 @@ header{
     height: 75vh;
 }
 
+.h-85vh{
+    height: 85vh;
+}
+
+
 .card-img-top {
     object-fit: cover;
-    height: 200px; /* Ajusta este valor según tus necesidades */
+    height: 250px; /* Ajusta este valor según tus necesidades */
     padding: 10px;
 }
 
@@ -318,14 +334,22 @@ header{
     user-select: none; /* Standard */
 }
 
+.button-size {
+    width: 100%; 
 
+}
 
 @media screen and (min-width: 991px) {
+    header{
+        height: 15vh;
+    }
     h1{
-        background: url("./img/logos/Logo_azul.svg") 0 0 no-repeat;
-        width: 23%;
-        height: 80px;
-        
+        background: url("./img/logos/Logo_azul.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: auto;
+
     }
     
     .header_background{
@@ -408,23 +432,50 @@ header{
         transform: translate(0,33%);
     }
     
+    .button-size {
+        width: 90%; 
+    
+    }
     
 }
 
 @media screen and (min-width: 550px) and (max-width:830px) {
-    .header_background{
-        height: 30vh;
+    h1{
+        top:30px;
     }
-    header{
+    .header_background{
         height: 30vh;
     }
 
+    .mt-md-50px {
+        margin-top: 50px;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 400px; /* Ajusta este valor según tus necesidades */
+        padding: 10px;
+    }
 }
+
 @media screen and (min-width: 831px) and (max-width:990px) {
-    .header_background{
-        height: 38vh;
+    h1{
+        top: 80px;
     }
-    header{
-        height: 38vh;
+    .header_background{
+        height: 25vh;
+    }
+
+    .mt-md-80px {
+        margin-top: 50px;
     }
 }
+
+@media screen and (min-width: 1300px){
+
+    
+    .h-xl-75vh{
+        height: 75vh;
+    }
+}
+
