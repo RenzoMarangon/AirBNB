@@ -171,7 +171,7 @@ a{
 h1{
     background: url("./img/logos/Logo_blanco.svg") 0 0 no-repeat;
     background-size: contain;
-    height: 80px;
+    height: 90px;
     color:transparent;
     z-index: 100;
 }
@@ -343,11 +343,10 @@ header{
     }
     h1{
         background: url("./img/logos/Logo_azul.svg");
-        background-position: center;
+        background-position: end;
         background-repeat: no-repeat;
         background-size:cover;
         width: auto;
-
     }
     
     .header_background{
