@@ -185,14 +185,12 @@ header{
     margin-bottom: 5vh;
 }
 
-.burguer-button{
-    background-color: #000;
 
-}
 
 .burguer-button img{
     width: 30px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .header_background
@@ -445,6 +443,7 @@ header{
     }
     .header_background{
         height: 30vh;
+        top:-5vh;
     }
 
     .mt-md-50px {
@@ -464,6 +463,7 @@ header{
     }
     .header_background{
         height: 25vh;
+        
     }
 
     .mt-md-80px {
