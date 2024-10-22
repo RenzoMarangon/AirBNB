@@ -1,0 +1,200 @@
+/* WIDTH */
+
+.w-30{
+    width: 30% !important;
+}
+
+.w-40{
+    width: 40% !important;
+}
+
+.w-45{
+    width: 45% !important;
+}
+
+.w-80{
+    width: 80% !important;
+}
+
+.w-95{
+    width: 95% !important;
+}
+
+/* HEIGHT */
+
+.h-15vh{
+    height: 15vh;
+}
+
+.h-25vh{
+    height: 25vh;
+}
+
+.h-75vh{
+    height: 75vh;
+}
+
+.h-85vh{
+    height: 85vh;
+}
+
+/* ROUNDED & BORDER */
+
+
+.rounded-6{
+    border-radius: 8rem;
+}
+
+.border-10px{
+    border-radius: 10px !important;
+}
+
+.border-color-gray{
+
+    border: solid 1px rgba(82, 82, 82, 0.26) !important;
+
+}
+
+.border-color-gray:focus{
+
+    outline: solid 1px rgba(100, 100, 100, 0.425) !important;
+}
+
+/* FONT SIZE */
+
+.fs-8px{
+    font-size:12px;
+}
+
+.fs-16px{
+    font-size: 16px ;
+}
+
+.fs-32px{
+    font-size: 32px;
+}
+
+/* Z INDEX */
+
+.z-50{
+    z-index: 100;
+}
+
+.z-100{
+    z-index: 100;
+}
+
+/* MARGIN */
+
+.mt-3{
+    margin-top: 25px !important;
+}
+
+.mt-5{
+    margin-top: 50px !important;
+}
+
+.mt-6{
+    margin-top: 60px !important;
+}
+
+/* SCALE */
+
+.scale-1{
+    transition: transform 0.3s ease-in-out;
+}
+.scale-1:hover{
+    transform: scale(1.1);
+
+}
+
+.scale-05{
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale-05:hover{
+    transform: scale(1.05);
+
+}
+
+/* ALIGNMENT */
+
+.justify-self-center {
+    justify-self: center !important;
+}
+
+.justify-self-end{
+    justify-self: center !important;
+}
+
+/* MEDIA-QUERYS */
+
+@media screen and (min-width: 550px) and (max-width:855px) {
+
+    .mt-md-50px {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 831px) and (max-width:990px) {
+
+    .mt-md-80px {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 991px){
+
+
+    .h-xl-75vh{
+        height: 75vh;
+    }
+
+    .h-xl-85vh{
+        height: 85vh;
+    }
+
+    .pb-xl-15vh{
+        padding-bottom: 15vh;
+    }
+    
+}
+
+@media screen and (min-width: 991px) {
+
+    .w-lg-80{
+        width: 80%;
+    }
+    
+    .w-lg-25{
+        width: 25% !important;
+    }
+
+
+    .w-lg-50{
+        width: 50% !important;
+
+    }
+
+    .fs-lg-12px{
+        font-size: 12px !important;
+    }
+    .fs-lg-14px{
+        font-size: 14px !important;
+    }
+
+    .fs-lg-16px{
+        font-size: 16px !important;
+    }
+
+    .fw-lg-normal{
+        font-weight: 300 !important;
+    }
+
+    .bg-custom-lg-transparent{
+        background-color: transparent !important;
+    }
+    
+}

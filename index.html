@@ -12,44 +12,50 @@
     />
     <script src="js/wow.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/layout.css">
 
 </head>
 <body class="position-relative">
 
+    <header class="container">
 
-    <header class="container ">
         <h1 class=" animate__animated animate__fadeInDown wow user-select-none scale-05" >BnBuddy</h1>
 
-        <!-- <button class="bg-transparent border-0 align-self-start mt-4 ms-auto btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <img src="./img/logos/hamburger-menu.svg" alt="Menu"> 
-        </button> -->
-
+        <!-- NAV MOBILE -->
         <nav class="d-lg-none w-25 d-flex justify-content-center">
             <button class="bg-transparent z-50 burguer-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./img/logos/hamburger-menu.svg" class="navbar-toggler-icon" alt="">
             </button>
             <div class="collapse navbar-collapse bg-light w-50 position-absolute mobile-menu z-100" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-4 mt-4">
+
+                    <li class="nav-item mx-4 mt-3">
                         <a class="nav-link" href="#"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Inicio</a>
                     </li>
+
                     <li class="nav-item mx-4 my-2">
                         <a class="nav-link" href="#beneficios">Beneficios</a>
                     </li>
+
                     <li class="nav-item mx-4 my-2">
                         <a class="nav-link" href="#comoFunciona">Como funciona</a>
                     </li>
+
                     <li class="nav-item mx-4 my-2">
                         <a class="nav-link" href="#planes">Planes</a>
                     </li>
 
                     <li class='dropdown text-blue  mx-4 my-2'  
                     data-wow-duration=".6s" data-wow-delay=".5s"  >
+
                         <button class="bg-transparent dropdown-toggle text-white scale-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./img/logos/icon-mexico.svg" alt="">  
                             ES
                         </button>
+
                         <ul class="dropdown-menu ">
                             <li class="dropdown-item ">
                                 <button class="bg-transparent w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,11 +65,14 @@
                             </li>
                             </ul>
                     </li>
+
                 </ul>
             </div>
         </nav>
 
+        <!-- NAV DESKTOP -->
         <nav class="d-none d-lg-flex h-50 mt-5 w-50 align-items-start justify-content-around bg-custom-blue bg-transparent z-100">
+            
             <a href="#" 
             class="text-white fw-medium scale-1 wow animate__animated animate__fadeInDown" 
             data-wow-duration=".5s" data-wow-delay=".1s" >
@@ -101,44 +110,16 @@
             </div>
         </nav>
 
-          
-        <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body active">
-                <nav class=" h-100 ">
-                    <ul class="d-flex flex-column h-25 justify-content-between align-items-start ">
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#">Inicio</a></button></li>
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#beneficios">Beneficios</a></button></li>
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#comoFunciona">Cómo funciona</a></button></li>
-                        <li><button class="bg-custom-blue-3 p-2 rounded-2 shadow my-2"><a class="text-white fw-normal" href="#planes">Planes</a></button></li>
-                        <div class="dropdown">
-                            <button class="bg-transparent dropdown-toggle my-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/logos/icon-mexico.svg" alt="">  
-                                ES
-                            </button>
-                            <ul class="dropdown-menu ">
-                                <li class="dropdown-item ">
-                                    <button class="bg-transparent w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="./img/logos/icon-eeuu.png" alt="">  
-                                        EN
-                                    </button>
-                                </li>
-                              </ul>
-                        </div>
-                     
-                    </ul>
-                </nav>
-            </div>
-        </div> -->
     </header>
 
+    <!-- Fondo de inicio -->
     <section class="header_background "></section>
 
+    <!-- Portada -->
 
     <section class="container d-lg-flex align-items-center h-xl-85vh pb-xl-15vh" >
         <div class="h-auto w-100 mt-md-50px mt-md-80px">
+
             <h2 class="fw-bold fs-1 wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">Guías digitales inteligentes para hosts</h2>
             <p class="fw-medium fs-normal wow animate__animated animate__fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">Mejora la experiencia de tus huéspedes y ofrece una guía digital personalizada accesible desde cualquier dispositivo.</p>
             
@@ -157,27 +138,33 @@
                 <input class="rounded-4 p-3 mb-2 border bg-transparent" type="text" placeholder="examples@examples.com" required>
                 <input class="rounded-4 p-3 bg-custom-blue text-white fw-semibold" type="submit" value="Suscribete">
             </form>
+
         </div>
     
         <!-- Imagen ajustada a pantallas pequeñas y grandes -->
-        <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex justify-content-center">
+        <div class="col-12 col-lg-6 mt-3 mt-lg-0 d-flex justify-content-center">
             <img class="img-fluid wow animate__animated animate__fadeIn" src="./img/illustrations/img_top.png" alt="BnBuddy" data-wow-delay=".2s" data-wow-duration="1s">
         </div>
+
     </section>
     
     <!-- Segunda sección con optimización para responsive -->
     <section class="container d-flex flex-column mt-5">
         <div class="w-100 d-flex flex-column justify-content-center text-center">
+
             <h2 class="fw-bold fs-2 text-blue pt-4 pb-2 wow animate__animated animate__bounceIn" data-wow-duration=".5s" data-wow-delay=".2s">
                 Optimiza la experiencia de tus huéspedes con BnBuddy
             </h2>
+
             <p class="fw-normal wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-duration=".8s">
                 Simplifica la comunicación, ofrece recomendaciones personalizadas, garantiza la confianza internacional y accede fácilmente desde cualquier dispositivo.
             </p>
+
         </div>
     
         <!-- Lista de características con ajuste responsive -->
         <ul class="d-flex flex-column flex-lg-row justify-content-around align-items-center container bg-custom-gray p-4 rounded-6">
+
             <li class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center scale-1 mb-4 mb-lg-0" data-wow-duration="1s" data-wow-delay=".5s">
                 <img class="w-50 w-lg-80 img-fluid" src="./img/logos/question.svg" alt="FAQ">
                 <p class="text-blue fw-medium fs-5 fs-lg-16px text-center">Reduce las preguntas de tus huéspedes</p>
@@ -197,16 +184,21 @@
                 <img class="w-50 w-lg-80 img-fluid" src="./img/logos/Phone.svg" alt="Phone">
                 <p class="text-blue fw-medium fs-5 fs-lg-16px text-center">Visualiza tu guía en cualquier dispositivo</p>
             </li>
+
         </ul>
     </section>
 
+
+    <!-- FAQs -->
     <section class="d-flex flex-column align-items-center justify-content-center container mb-4">
+
         <h2 class="my-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s" id="beneficios">Fácil de configurar, publica tu guía en minutos.</h2>
 
         <div class="container">
             <div class="row justify-content-center">
+
                 <div class="col-12 col-lg-4 p-5 mb-2 scale-1">
-                    <div class="card h-100 border-0 shadow-sm rounded-6">
+                    <div class="card h-100 border-10px shadow-sm rounded-6">
                         <img class="card-img-top img-fluid " src="./img/cards/section.jpg" alt="Funciona en cualquier dispositivo">
                         <div class="card-body">
                             <h5 class="card-title">Funciona en cualquier dispositivo</h5>
@@ -214,8 +206,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
-                    <div class="card h-100 border-0 shadow-sm rounded-6">
+                    <div class="card h-100 border-10px shadow-sm rounded-6">
                         <img class="card-img-top img-fluid" src="./img/backgrounds/2.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
                             <h5 class="card-title">Traducciones automáticas con IA</h5>
@@ -223,8 +216,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
-                    <div class="card h-100 border-0 shadow-sm rounded-6">
+                    <div class="card h-100 border-10px shadow-sm rounded-6">
                         <img class="card-img-top img-fluid" src="./img/backgrounds/1.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
                             <h5 class="card-title">Envía tu guía fácilmente</h5>
@@ -232,8 +226,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
-                    <div class="card h-100 border-0 shadow-sm rounded-6">
+                    <div class="card h-100 border-10px shadow-sm rounded-6">
                         <img class="card-img-top img-fluid" src="./img/backgrounds/5.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
                             <h5 class="card-title">Envía tu guía por correo electrónico, WhatsApp o muestra un código QR en tu propiedad.</h5>
@@ -241,8 +236,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
-                    <div class="card h-100 border-0 shadow-sm rounded-6">
+                    <div class="card h-100 border-10px shadow-sm rounded-6">
                         <img class="card-img-top img-fluid" src="./img/backgrounds/4.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
                             <h5 class="card-title">Agrega contenido personalizado</h5>
@@ -250,8 +246,9 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-12 col-lg-4 mb-2 p-5 scale-1">
-                    <div class="card h-100 border-0 shadow-sm rounded-6">
+                    <div class="card h-100 border-10px shadow-sm rounded-6">
                         <img class="card-img-top img-fluid" src="./img/backgrounds/3.png" alt="Organiza tu contenido en secciones">
                         <div class="card-body">
                             <h5 class="card-title">Organiza tu contenido en secciones</h5>
@@ -259,14 +256,16 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="container d-flex align-items-center flex-column position-relative" id="comoFunciona">
 
+    <!-- Cards + img & text + video -->
+    <section class="container d-flex align-items-center flex-column position-relative" id="comoFunciona">
         <div class="row">
-            <div  class="w-100 w-lg-50 mt-4 d-flex flex-column col-12 col-lg-6">
+            <div  class="w-100 w-lg-50 mt-3 d-flex flex-column col-12 col-lg-6">
                 <img class="superhost w-25 d-lg-block d-none" src="./img/illustrations/superhost.png" alt="demo">
                 <img class="m-auto w-100" src="./img/illustrations/Phone+comments-min.png" alt="demo">
 
@@ -275,7 +274,6 @@
             <div class="d-flex flex-column col-12 col-lg-6 justify-content-center">
                 <h2 class="text-blue text-center fw-semibold fs-2 mb-3 wow animate__animated animate__bounceIn">¿Por qué usar guías digitales?</h2>
                 <p class="fw-normal text-start align-self-center w-75 ">Las guías digitales ofrecen una experiencia conveniente y personalizada para huéspedes y anfitriones, simplificando la comunicación, proporcionando recomendaciones relevantes, facilitando la traducción automática para audiencias internacionales y permitiendo un acceso rápido desde cualquier dispositivo</p>
-                <!-- <button class=" w-50 w-lg-25 p-2 bg-custom-blue text-white fw-semibold fw-lg-normal align-self-center align-self-lg-end fs-lg-16px fs-5 rounded-4">Ver demo</button> -->
             </div>
         </div>
 
@@ -287,6 +285,9 @@
         </video>
     </section>
 
+
+    <!-- Buttons -->
+
     <section class="container mt-5">
         <h2 class="container fs-2 fw-semibold text-blue mt-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s">Ahorrá tiempo</h2>
     
@@ -296,7 +297,7 @@
                 <!-- Botón 1 -->
                 <button 
                     type="button"  
-                    class="d-flex button-size bg-custom-blue-2 p-2 rounded-4 my-4 shadow text-start scale-05"
+                    class="d-flex button-size bg-custom-dark-blue p-2 rounded-4 my-4 shadow text-start scale-05"
                     onclick="changeImage('./img/illustrations/guide_illustration_1.png')"
                 >
                     <img class="p-2" src="./img/logos/img.svg" alt="Personaliza tus secciones">
@@ -306,7 +307,7 @@
                 <!-- Botón 2 -->
                 <button 
                     type="button"  
-                    class="d-flex button-size bg-custom-blue-2 p-2 rounded-4 my-4 shadow text-start scale-05"
+                    class="d-flex button-size bg-custom-dark-blue p-2 rounded-4 my-4 shadow text-start scale-05"
                     onclick="changeImage('./img/illustrations/guide_illustration_2.png')"
                 >
                     <img class="p-2" src="./img/logos/money.svg" alt="Aumenta tus ingresos">
@@ -316,7 +317,7 @@
                 <!-- Botón 3 -->
                 <button 
                     type="button"  
-                    class="d-flex button-size bg-custom-blue-2 p-2 rounded-4 my-4 shadow text-start scale-05"
+                    class="d-flex button-size bg-custom-dark-blue p-2 rounded-4 my-4 shadow text-start scale-05"
                     onclick="changeImage('./img/illustrations/guide_illustration_3.png')"
                 >
                     <img class="p-2" src="./img/logos/star.svg" alt="Experiencia">
@@ -331,10 +332,14 @@
         </div>
     </section>
 
+
+    
     <section class="container my-5 " id="planes">
+        
         <div class="card-background ">
         </div>
-        <!-- <h2 class="fs-12px fw-semibold text-blue">Planes</h2> -->
+
+        <!-- Plans -->
         <div class="d-lg-flex flex-lg-row justify-content-between p-3">   
             <!-- Plan free -->
             <div class="bg-white mb-4 p-0 rounded-4 container col-12 col-lg-5 d-lg-flex flex-column justify-content-between shadow  scale-05">
@@ -436,7 +441,7 @@
 
     </section>
 
-
+    <!-- FAQs -->
     <section class="container" id="faq">
         <h2 class="h5 text-blue fs-2 fw-semibold mb-5 wow animate__animated animate__bounceIn" data-wow-duration=".5s">Preguntas frecuentes</h2>
 
@@ -447,9 +452,9 @@
 
             <ul class="accordion container d-lg-flex flex-column align-items-center" id="accordionExample">
 
-                <li class="accordion-item mb-4 my-lg-4 border-0 shadow-sm w-lg-80">
+                <li class="accordion-item mb-4 my-lg-4 border-10px shadow-sm w-lg-80">
                     <h2 class="accordion-header ">
-                    <button class="accordion-button border-0 fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button border-10px fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         ¿Cómo puedo crear una guía digital para mi propiedad en BnBuddy?
                     </button>
                     </h2>
@@ -462,9 +467,9 @@
                     </div>
                 </li>
 
-                <li class="accordion-item my-4  border-0 shadow-sm w-lg-80">
+                <li class="accordion-item my-4  border-10px shadow-sm w-lg-80">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed border-0 fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed border-10px fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         ¿Qué idiomas admite BnBuddy para la traducción automática de las guías?
                     </button>
                     </h2>
@@ -477,9 +482,9 @@
                 </li>
 
 
-                <li class="accordion-item my-4  border-0 shadow-sm w-lg-80">
+                <li class="accordion-item my-4  border-10px shadow-sm w-lg-80">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed border-0 fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="accordion-button collapsed border-10px fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         ¿Cómo puedo integrar BnBuddy con mi plataforma de reservas o calendario de disponibilidad?
                     </button>
                     </h2>
@@ -490,9 +495,9 @@
                     </div>
                 </li>
 
-                <li class="accordion-item my-4 border-0 shadow-sm w-lg-80">
+                <li class="accordion-item my-4 border-10px shadow-sm w-lg-80">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed border-0 fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <button class="accordion-button collapsed border-10px fw-normal" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         ¿Cómo puedo obtener ayuda si tengo algún problema o pregunta sobre el uso de BnBuddy?
                     </button>
                     </h2>
@@ -508,15 +513,14 @@
         <form action="" class="mb-5 bg-white w-40 px-2 py-2 mx-4 rounded-pill d-none d-lg-flex justify-content-around">
             <input class="w-75 rounded-4 py-2 mx-2 px-2 bg-transparent" type="email"  placeholder="examples@examples.com" required>
             <button  class="rounded-pill h-100 py-2 px-3 bg-custom-blue text-white fw-semibold scale-05" type="submit">Suscribete</button>
-
-
-
         </form>
     </section>
+
 
     <div class="form-background ">
     </div>
 
+    <!-- FORM -->
     <section class="container bg-custom-lg-transparent position-relative" id="contacto">
         <h2 class="text-lg-center fs-2 fw-semibold wow animate__animated animate__bounceIn" data-wow-duration=".5s">Contactanos</h2>
 
@@ -533,12 +537,8 @@
             <input class="col-12 col-lg-2  my-2 rounded-4 p-2 scale-05 bg-custom-blue text-white fw-normal" type="submit" value="Enviar">
         
         </form>
-
-        
-
     </section>
 
-    
 
     <footer class="container d-lg-flex align-items-center justify-content-between mt-6 py-2 h-15vh">
 

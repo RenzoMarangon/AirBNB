@@ -1,0 +1,43 @@
+/* BACKGROUND */
+
+.bg-custom-blue{
+    background: #5164F1;
+}
+
+.bg-custom-dark-blue{
+    background-color: #2A43FD;
+}
+
+
+.bg-custom-transparent{
+    background-color: transparent !important;
+}
+
+.bg-custom-gray
+{
+    background: #80b5e30a;
+}
+
+.text-blue
+{
+    color:#263A74 !important;
+}
+
+.text-blue-2
+{
+    color:#5164F1 !important;
+}
+
+.text-custom-transparent{
+    color:transparent;
+    user-select: none;
+}
+
+.outline-blue{
+    border: solid 2px #5164F1;
+}
+
+.outline-white{
+    border: solid 2px #ffffff;
+}
+

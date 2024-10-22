@@ -1,0 +1,156 @@
+.button-size {
+    width: 100%; 
+
+}
+
+.burguer-button{
+    background-color: #000;
+
+}
+
+.burguer-button img{
+    width: 30px;
+    height: auto;
+}
+
+.card{
+    border: none;
+}
+
+.card-background{
+    background-image: url("../img/backgrounds/footer_background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    z-index: -1;
+    bottom: 25%;
+    transform: translate(0,25%);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px; /* Ajusta este valor según tus necesidades */
+    padding: 10px;
+}
+
+.form-background{
+    background-image: url("../img/backgrounds/footer_background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    left: 0;
+    z-index: -1;
+    bottom: 0%;
+    transform: translate(0,0%);
+}
+
+
+.header_background
+{
+    background-image: url("../img/backgrounds/header_background.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:contain;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, 0%);
+    z-index: -1;
+
+}
+
+.user-select-none {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+}
+
+/* MEDIA-QUERYS */
+
+@media screen and (min-width: 550px) and (max-width:855px) {
+    
+    .card-img-top {
+        object-fit: cover;
+        height: 400px; /* Ajusta este valor según tus necesidades */
+        padding: 10px;
+    }
+
+    .header_background{
+        height: 30vh;
+        top: -5vh;
+
+    }
+
+}
+
+
+@media screen and (min-width: 831px) and (max-width:990px) {
+
+    .header_background{
+        height: 25vh;
+    }
+
+}
+
+
+@media screen and (min-width: 991px) {
+    
+    .button-size {
+        width: 90%; 
+    }
+
+    .card-background{
+        background-image: url("../img/backgrounds/footer_background.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        left: 0;
+        z-index: -1;
+        bottom: 33%;
+        transform: translate(0,33%);
+    }
+
+    .form-background{
+        background-image: url("../img/backgrounds/footer_background.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 21%;
+        left: 0;
+        z-index: -1;
+        bottom: 2%;
+        transform: translate(0,5%);
+    }
+
+    .header_background{
+        background-image: url("../img/backgrounds/desktop_background.svg");
+        width: 75%;
+        height: 100%;
+        transform: translate(0%, 0%);
+
+    }
+
+    .superhost{
+        position: absolute;
+        top: 5% !important;
+        left: 45% !important;
+        transform: translate(-70%, -25%);
+        width: 15% !important;
+    }
+    
+}
